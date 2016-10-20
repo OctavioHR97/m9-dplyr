@@ -14,7 +14,7 @@ ncol(flights)
 ?flights
 
 # Add a column that is the amount of time gained in the air (`arr_delay` - `dep_delay`)
-flights <- utate(flights, time_gained = arr_delay - dep_delay)
+flights <- mutate(flights, time_gained = arr_delay - dep_delay)
 
 # Sort your data.frame desceding by the column you just created
 flights <- arrange(flights, - time_gained)
